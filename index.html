@@ -3,64 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <title>Do You Wanna Go Out With Me?</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Will you be my Valentine?</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
+        <div class="greeting">
+            <h1 class="header_text text-start">Dear Kang Min,</h1>
+        </div>
 
-        <h1 class="header_text">Dear Kang Min,</h1>
-        
         <div class="memory-container">
-            <div class="memory-item">
-                <div class="content-wrapper">
-                    <img src="pics/photo1.jpg" alt="First Memory">
-                    <div class="memory-text">There are so many things that I have been wanting to say lately! 🌟</div>
+            <div class="memory-item-wrapper">
+                <div class="memory-item">
+                    <div class="content-wrapper">
+                        <img src="pics/photo1.jpg" alt="First Memory" class="img-fluid">
+                        <div class="memory-text">There are so many things that I have been wanting to say lately! 🌟</div>
+                    </div>
                 </div>
             </div>
             
-            <div class="memory-item">
-                <div class="content-wrapper">
-                    <img src="pics/photo2.jpg" alt="Second Memory">
-                    <div class="memory-text">That I'm thinking of you all the time! 😊</div>
+            <div class="memory-item-wrapper">
+                <div class="memory-item">
+                    <div class="content-wrapper">
+                        <img src="pics/photo2.jpg" alt="Second Memory" class="img-fluid">
+                        <div class="memory-text">That I'm thinking of you all the time! 😊</div>
+                    </div>
                 </div>
             </div>
             
-            <div class="memory-item">
-                <div class="content-wrapper">
-                    <img src="pics/gif3.gif" alt="Third Memory">
-                    <div class="memory-text">That I'm always thinking of the next time I'm going to see you! ❤️</div>
+            <div class="memory-item-wrapper">
+                <div class="memory-item">
+                    <div class="content-wrapper">
+                        <img src="pics/gif3.gif" alt="Third Memory" class="img-fluid">
+                        <div class="memory-text">That I'm always thinking of the next time I'm going to see you! ❤️</div>
+                    </div>
                 </div>
             </div>
             
-            <div class="memory-item">
-                <div class="content-wrapper">
-                    <img src="pics/photo4.jpg" alt="Fourth Memory">
-                    <div class="memory-text">That there are a thousand things I want to do with you! 💓</div>
+            <div class="memory-item-wrapper">
+                <div class="memory-item">
+                    <div class="content-wrapper">
+                        <img src="pics/photo4.jpg" alt="Fourth Memory" class="img-fluid">
+                        <div class="memory-text">That there are a thousand things I want to do with you! 💓</div>
+                    </div>
                 </div>
             </div>
             
-            <div class="memory-item">
-                <div class="content-wrapper">
-                    <img src="pics/gif5.gif" alt="Fifth Memory">
-                    <div class="memory-text">And that I'm always always... falling more and more in love with you each day... 🌈</div>
+            <div class="memory-item-wrapper">
+                <div class="memory-item">
+                    <div class="content-wrapper">
+                        <img src="pics/gif5.gif" alt="Fifth Memory" class="img-fluid">
+                        <div class="memory-text">And that I'm always always... falling more and more in love with you each day... 🌈</div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <h1 class="header_text">Will you be my Valentines?</h1>
+        <div class="valentines-section">
+            <div class="valentines-header">
+                <h1 class="header_text">Will you be my Valentines?</h1>
+            </div>
 
-        <div class="gif_container">
-            <img src="https://media.tenor.com/efbi1EpFlVUAAAAi/bugcat-capoo.gif" alt="Cute Capoo GIF" class="img-fluid">
-        </div>
-        
-        <div class="buttons">
-            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
-            <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+            <div class="gif_container">
+                <img src="https://media.tenor.com/efbi1EpFlVUAAAAi/bugcat-capoo.gif" alt="Cute Capoo GIF" class="img-fluid">
+            </div>
+
+            <div class="buttons">
+                <button id="yesButton" class="btn" onclick="nextPage()">Yes</button>
+                <button id="noButton" class="btn" onmouseover="moveButton()">No</button>
+            </div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

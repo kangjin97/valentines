@@ -4,15 +4,19 @@ function moveButton() {
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
     
-    const maxX = windowWidth - noButton.offsetWidth - 50;
-    const maxY = windowHeight - noButton.offsetHeight - 50;
+    // Calculate safe boundaries (keeping button fully visible)
+    const maxX = windowWidth - noButton.offsetWidth - 20;
+    const maxY = windowHeight - noButton.offsetHeight - 20;
     
+    // Generate random position within viewport
     const newX = Math.random() * maxX;
     const newY = Math.random() * maxY;
     
+    // Apply new position using fixed positioning
     noButton.style.position = 'fixed';
-    noButton.style.left = newX + 'px';
-    noButton.style.top = newY + 'px';
+    noButton.style.left = Math.max(20, Math.min(maxX, newX)) + 'px';
+    noButton.style.top = Math.max(20, Math.min(maxY, newY)) + 'px';
+    noButton.style.zIndex = '1000';
 }
 
 function nextPage() {
