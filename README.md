@@ -1,6 +1,6 @@
 # Will you be my valentines
 
-This is an interactive webpage for geeks t ask their grilfriends out on valentines.
+This is an interactive webpage for geeks to ask their grilfriends out on valentines.
 
 ## Features
 
